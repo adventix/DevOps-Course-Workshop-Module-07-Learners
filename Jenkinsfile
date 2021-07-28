@@ -4,7 +4,7 @@ pipeline {
         stage('Dotnet Build and Test') {
             agent {
                 docker { 
-                    image 'mcr.microsoft.com/dotnet/sdk:3.1' 
+                    image 'mcr.microsoft.com/dotnet/sdk:5.0' 
                     args '-u root:root'
                 }
             }
