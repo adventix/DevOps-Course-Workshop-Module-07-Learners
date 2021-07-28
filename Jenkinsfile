@@ -1,6 +1,6 @@
 pipeline {
     agent none
-        stage{
+        stages {
             stage('Dotnet Build and Test') {
                 agent {
                     docker { 
